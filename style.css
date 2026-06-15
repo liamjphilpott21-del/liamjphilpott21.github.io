@@ -27,7 +27,7 @@ header {
 }
 
 .logo {
-    width: 180px;
+    width: calc(180px + 2cm);
     height: auto;
     margin: 0 0 12px 0;
     border-radius: 8px;
