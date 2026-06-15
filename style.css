@@ -10,17 +10,41 @@ body {
 }
 
 /* --- Navigation Header --- */
+/* --- Navigation Header --- */
 header {
-    padding: 50px 20px 30px 20px;
+    padding: 40px 20px 20px 20px;
     background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin: 0 0 12px 0;
+    border-radius: 8px;
+    object-fit: contain;
+    background: transparent;
 }
 
 .site-title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 3px;
-    margin-bottom: 25px;
+    margin: 0; /* reset since layout uses flex */
     color: #111111;
+}
+
+nav {
+    margin-top: 14px;
 }
 
 nav a {
