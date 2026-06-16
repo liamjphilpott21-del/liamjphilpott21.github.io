@@ -20,6 +20,63 @@ header {
     flex-direction: column;
 }
 
+.hero {
+    position: relative;
+    min-height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 20px;
+    background: url("images/hero-bg.png") no-repeat center/cover;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 900px;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 900;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hero-subtitle {
+    margin: 22px auto 0;
+    max-width: 720px;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+    color: #f2f2f2;
+}
+
+.hero nav {
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.hero nav a {
+    color: rgba(255, 255, 255, 0.95);
+}
+
 .brand {
     display: flex;
     align-items: center;
